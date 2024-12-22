@@ -1,16 +1,5 @@
-* body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #D9D9D9;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.popup {
-    background: bisque;
+.ticket {
+    background: var(--primary-color);
     padding: 20px 30px;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -18,36 +7,38 @@
     max-width: 400px;
 }
 
-.popup h1 {
-    font-size: 22px;
-    margin-bottom: 20px;
+.ticket h1 {
+    font-size: 28px;
+    font-weight: 600;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .form-group {
-    margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .form-group label {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
 }
 
 .form-group input[type="email"],
 .form-group input[type="date"] {
     width: 60%;
-    padding: 8px;
+    padding: 5px;
     border: 1px solid white;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .counter {
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 
 .counter button {
@@ -63,19 +54,12 @@
 }
 
 .counter button:hover {
-    background: blanchedalmond; 
-}
-
-.counter .count {
-    margin: 0 10px;
-    font-size: 16px;
-    font-weight: bold;
-    width: 30px;
-    text-align: center;
+    background: var(--secondary-color); 
+    color: var(--fontcolor1);
 }
 
 .form-group-total {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     display: flex;
     justify-content: space-between;
@@ -84,23 +68,23 @@
 }
 
 .amound {
-    color: rgb(64, 108, 231);
+    color: var(--secondary-color);
 }
 
 .ticket-info {
-    font-size: 14px;
-    line-height: 1.5;
-    background: blanchedalmond;
+    font-size: 16px;
+    line-height: 200%;
+    background: white;
     padding: 10px;
     border-radius: 5px;
-    margin-bottom: 30px;
+    margin: 30px 0;
     text-align: center;
 }
 
-.submit-btn {
-    background: rgb(64, 108, 231);
-    color: white;
-    font-size: 16px;
+.ticket-btn {
+    background: var(--secondary-color);
+    color: var(--fontcolor1);
+    font-size: 20px;
     border: none;
     padding: 10px 20px;
     width: 100%;
@@ -109,21 +93,13 @@
     transition: background 0.3s;
 }
 
-.submit-btn:hover {
-    background: rgb(64, 108, 231);
+.ticket-btn:hover {
+    background: #FF6600;
 }
- @media (max-width:768) {
-    .hero-container {
-        grid-template-columns: 1fr;
+ @media (max-width:600) {
+    .ticket-info {
+        font-size: 14px;
+        line-height: 170%;
+        margin: 20px 0;
     }
-
-    .features {
-        flex-direction: column;
-    }
-
-    nav ul {
-        display: none;
-    }
-
 }
- 

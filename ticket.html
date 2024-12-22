@@ -3,15 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Community Science Museum | Robotics and AI</title>
+    <title>Community Science Museum | Buy Visiting Ticket</title>
     <meta
       name="description"
-      content="Step into the future with our robotics and AI exhibition. Explore the incredible applications of artificial intelligence and robotics in everyday life, industry, and beyond. Don’t forget to meet Rob the Robot for an interactive experience!"
+      content="Purchase your visiting tickets for the Community Science Museum. Explore exhibits, attend guided tours, and experience the wonders of science!"
     />
-
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="stylesheet" href="./assets/css/exhibits.css" />
-    <link rel="stylesheet" href="./assets/css/title-description.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css"/>
+    <link rel="stylesheet" href="./assets/css/ticket.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -129,29 +127,79 @@
     </header>
 
     <main>
-      <section class="page-title">
-        <h1 class="title">Robotics and AI</h1>
-      </section>
-
-      <section class="image-galeria">
-        <p>
-          The information revolution is here and robotics and artificial
-          intelligence are the science of the future. <br>From useful home
-          applications of AI to industrial uses of robotics, the future is here.
-        </p>
-        <div class="galeria-frame">
-          <div class="galeria">
-            <img src="./assets/images/robotic1.jpg" alt="" />
-            <img src="./assets/images/robotic2.jpg" alt="">
-            <img src="./assets/images/robotic3.jpg" alt="" />
-            <img src="./assets/images/robotic4.jpg" alt="" />
+        <div class="ticket">
+            <h1>Buy Visiting Ticket</h1>
+            <form action="">
+              <div class="form-group">
+                <label for="date">When</label>
+                <input type="date" id="date" required />
+              </div>
+      
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+      
+              <div class="form-group">
+                <label for="">Adult</label>
+                <div class="counter">
+                  <button type="button" class="minus">-</button>
+                  <span class="count">0</span>
+                  <button type="button" class="plus">+</button>
+                </div>
+              </div>
+      
+              <div class="form-group">
+                  <label for="">Child (0-17 years)</label>
+                  <div class="counter">
+                    <button type="button" class="minus">-</button>
+                    <span class="count">0</span>
+                    <button type="button" class="plus">+</button>
+                  </div>
+                </div>
+      
+              <div class="form-group-total">
+                <label for="">Total</label>
+                <span class="amound">€0</span>
+              </div>
+      
+              <div class="ticket-info">
+                <p><strong>Ticket information</strong></p>
+               
+                <p>
+                  General Admission: Tickets are required for all visitors. Discounts
+                  available for specific groups.Students: Reduced rates with a valid
+                  student ID.
+                </p>
+                
+                <p>Children: Special pricing for children under 17.</p>
+                
+                <p>
+                  Teachers: Free entry for educators with a valid teacher ID (advance
+                  registration required).
+                </p>
+              
+                <p>
+                  Researchers: Complimentary access upon presentation of valid
+                  credentials.
+                </p>
+                
+                <p>
+                  Special Events and Workshops: May require additional tickets. Please
+                  check event details.
+                </p>
+              </div>
+      
+              <button type="submit" class="ticket-btn">Buy Ticket</button>
+            </form>
           </div>
-        </div>
-        <p>
-          You can even say hello and shake the hand of Rob the Robot.
-        </p>
-      </section>
     </main>
+
 
     <footer>
       <div class="footer-image">
