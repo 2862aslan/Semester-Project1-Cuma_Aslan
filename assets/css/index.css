@@ -5,7 +5,7 @@
   width: 100%;
   height: 60vh;
   position: relative;
-  background-image: url(/assets/images/astronaut-exhibit-museum.jpg);
+  background-image: url(../images/astronaut-exhibit-museum.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
