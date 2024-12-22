@@ -18,7 +18,7 @@
     justify-content: center;
     align-items: center;
     background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.8)), 
-    url('/assets/images/colorful-museum-building.jpg') no-repeat center/cover;
+    url('../images/colorful-museum-building.jpg') no-repeat center/cover;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
