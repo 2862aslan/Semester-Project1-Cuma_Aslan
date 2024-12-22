@@ -1,0 +1,206 @@
+
+.hero{
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.hero img{
+  height: 40vh;
+  position: absolute;
+  margin: auto;
+}
+
+.hero .desciption{
+  position: absolute;
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  height: 90%;
+}
+
+.hero .desciption h3{
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 120%;
+  text-align: center;
+  position: relative;
+}
+
+.container {
+  width: 80%;
+  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+  min-width: 800px;
+  gap: 60px;
+
+}
+
+.content-1{
+  display: flex;
+  margin-top: 50px;
+  align-items: center;
+  gap: 40px;
+
+}
+.content-1 img{
+  width: 300px;
+  height: 300px;
+  transform: rotate(-10deg);
+}
+.content-1 p{
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+.form-container {
+  flex: 1;
+  max-width: 400px;
+  background-color: rgb(202, 201, 201);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+form {
+  margin-bottom: 15px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+form input, textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 1 rem;
+  cursor: pointer;
+}
+
+
+
+form p {
+  margin-bottom: 15px;
+  font-size: smaller;
+}
+form button {
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100%;
+}
+
+@media (max-width: 600px){
+  .hero{
+      flex-direction: column;
+
+      
+  }
+  
+  
+  .hero img{
+      width: 90%;
+      position: relative;
+
+  }
+  
+  .hero .desciption{
+      position: relative;
+      width: 100%;
+
+  }
+  
+  .hero .desciption p{
+      font-size: 20px;
+      line-height: 95%;
+      font-weight: 500;
+  }
+
+  
+  .hero .desciption h3{
+      font-size: 30px;
+      line-height: 95%;
+      font-weight: 700;
+  }
+
+  .container {
+      width: 100%;
+      
+  }
+  
+  .content{
+      min-width: 300px;
+  }
+  
+  .content-1{
+      flex-direction: column;
+      margin-top: 0;
+
+  
+  }
+  .content-1 img{
+      transform: none;
+  }
+  .content-1 p{
+     padding: 0 20px;
+     text-align: center;
+  }
+  
+  .young-workshop{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+
+      
+  }
+  
+  .young-workshop img{
+      transform: none;
+  
+  }
+  
+  .workshop-description h2{
+      text-align: center;
+  }
+  
+  
+  .workshop-description p{
+      text-align: justify;
+  }
+
+
+}

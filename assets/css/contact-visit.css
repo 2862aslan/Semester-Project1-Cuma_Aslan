@@ -1,0 +1,240 @@
+
+.visit-cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 30px;
+
+}
+.visit-cards .card{
+    height: 400px;
+    min-width: 33%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 460px;
+    height: auto;
+
+
+}
+
+.visit-cards .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px; 
+}
+
+.visit-cards .card h2{
+    position: absolute;
+    color: var(--fontcolor2);
+    font-size: 42px;
+    font-weight: bolder;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 254, 254, 0.6);
+
+}
+
+.visit-cards .card p{
+    padding: 10px 20px;
+}
+
+/* ?---------------SECTION  (admission-hours-container) START ------------------*/
+.admission-hours-container{
+    background-color: var(--primary-color);
+    color: var(--fontcolor2);
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+
+}
+
+.admission-title, .hours-title{
+    font-size: 36px;
+    font-weight: 600;
+    text-decoration: underline;
+    text-align: center;
+    color: var(--fontcolor2);
+}
+
+.admission-hours-container .admission{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 65%;
+
+}
+.admission-hours-container .admission p{
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    list-style: none;
+}
+
+.admission-hours-container .admission p .free{
+    color: red;
+}
+
+.admission-hours-container .admission p .price{
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.buy-ticket{
+    font-size: 24px;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--button-color);
+    color: var(--fontcolor1);
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+
+}
+
+.line{
+    display: block;
+    width: 3px;
+    height: 250px;
+    background-color: var(--fontcolor2);
+
+}
+
+.admission-hours-container .hours{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    color: var(--fontcolor1);
+    flex: 1 1 30%;
+}
+
+.table{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.hours .table .table-list{
+    display: flex;
+    gap: 10px;
+
+}
+
+.table-list ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.table-list ul li{
+    line-height: 1.8;
+    font-size: 20px;
+    color: var(--fontcolor2);
+
+}
+
+
+/* ?---------------SECTION 3 (admission-hours-container) FINISH ------------------*/
+
+hr{
+    height: 2px;
+    width: 90%;
+    text-align: center;
+    background-color: black;
+    margin: 40px auto;
+
+}
+
+.contact-location{
+    width: 100%;
+    max-width: 1500px;
+}
+.contact-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.contact-info {
+    width: 50%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: auto;
+}
+
+.contact-info h2 {
+    color: var(--fontcolor2);
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+  
+.contact-info p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.contact-map {
+    width: 98%;
+    height: 300px;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-map iframe{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+.contact-visit main .page-title .title{
+    font-size: 40px;
+    white-space: wrap;
+    text-align: center;
+    line-height: 95%;
+}
+
+.visit-cards .card{
+    width: 98%;
+    margin: auto;
+}
+
+.line{
+    display: none;
+}
+
+.contact-info {
+    width: 90%;
+
+}
+}

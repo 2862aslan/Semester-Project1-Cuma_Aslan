@@ -1,0 +1,77 @@
+.mission-vision-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.mission-vision-container h2{
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.mission img{
+    width: 30%;
+    min-width: 300px;
+    height: 350px;
+    border-radius: 20px;
+
+}
+
+.vision img{
+    width: 40%;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.mission, .vision{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mission-vision-container p{
+    font-size: 18px;
+    width: 50%;
+    max-width: 1000px;
+    text-align: justify;
+    font-weight: 500;
+
+}
+
+
+.img-paragraph{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.vision .img-paragraph{
+    flex-direction: row-reverse;
+}
+
+@media (max-width: 600px){
+.mission img{
+    width: 96%;
+}  
+
+.vision img{
+    width: 96%;
+}
+
+.mission-vision-container p{
+    width: 96%;
+    padding: 10px;
+}
+
+.img-paragraph{
+    justify-content: center;
+    align-items: center;
+}
+}

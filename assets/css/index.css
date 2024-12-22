@@ -1,0 +1,565 @@
+/* -------------- MAIN START --------------------- */
+/* ?----------------SECTION 1 (HERO) START------------------------ */
+
+.hero {
+  width: 100%;
+  height: 60vh;
+  position: relative;
+  background-image: url(/assets/images/astronaut-exhibit-museum.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .desciption {
+  position: absolute;
+  color: var(--fontcolor1);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+  width: 30%;
+  right: 10%;
+}
+
+.hero .desciption h2 {
+  font-size: 36px;
+  font-weight: 800;
+  text-align: center;
+  position: relative;
+}
+
+.hero .desciption p {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+}
+
+.hero .desciption a {
+  font-size: 22px;
+  font-weight: 800;
+  text-align: center;
+  position: relative;
+  background-color: var(--button-color);
+  padding: 10px 10px;
+  text-decoration: none;
+  color: var(--fontcolor1);
+}
+/* ?-------------- SECTION 1 (HERO) FINISH --------------------- */
+/* !---------------SECTION 2 (info-section) START ------------------*/
+
+.info-section {
+  background-color: rgb(255, 255, 255);
+  margin-top: 20px;
+  padding: 20px;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.info-section .text {
+  color: var(--fontcolor2);
+  font-size: 22px;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  flex: 1 1 50%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.info-section img {
+  object-fit: cover;
+  flex: 1 1 40%;
+  height: 300px;
+}
+/* !---------------SECTION 2 (info-section) FINISH ------------------*/
+
+/* ?---------------SECTION 3 (admission-hours-container) START ------------------*/
+.admission-hours-container {
+  background-color: var(--secondary-color);
+  color: var(--fontcolor1);
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.admission-title,
+.hours-title {
+  font-size: 36px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.admission-hours-container .admission {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 65%;
+}
+.admission-hours-container .admission p {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  list-style: none;
+}
+
+.admission-hours-container .admission p .free {
+  color: red;
+}
+
+.admission-hours-container .admission p .price {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.admission-hours-container .admission p .more {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.buy-ticket {
+  font-size: 24px;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--button-color);
+  color: var(--fontcolor1);
+  padding: 10px 30px;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+
+.line {
+  display: block;
+  width: 3px;
+  height: 250px;
+  background-color: var(--fontcolor1);
+}
+
+.admission-hours-container .hours {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  color: var(--fontcolor1);
+  flex: 1 1 30%;
+}
+
+.table {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.hours .table .table-list {
+  display: flex;
+  gap: 10px;
+}
+
+.table-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.table-list ul li {
+  line-height: 1.8;
+  font-size: 16px;
+}
+/* ?---------------SECTION 3 (admission-hours-container) FINISH ------------------*/
+/* !---------------SECTION 4 (exciting-container) START ------------------*/
+.exciting-container {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("/assets/images/william-bout.jpg") no-repeat center/cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.exciting-container .title {
+  color: var(--fontcolor1);
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.exciting-container .text {
+  background-color: #ffffff;
+  margin: 20px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 80%;
+  padding: 10px;
+}
+
+.exhibits-cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.exhibits-cards-container .card {
+  background: white;
+  border-radius: 20px;
+  width: 360px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.exhibits-cards-container .card-image {
+  width: 330px;
+  height: 330px;
+  position: relative;
+}
+
+.exhibits-cards-container .card img {
+  border-radius: 50%;
+  width: 330px;
+  height: 330px;
+  object-fit: cover;
+  position: absolute;
+}
+
+.exhibits-cards-container .card a {
+  background: #ff6600;
+  border-radius: 50%;
+  color: var(--fontcolor1);
+  font-family: var(--button-font-);
+  font-size: 18px;
+  font-weight: 800;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 240px;
+  left: 235px;
+  text-decoration: none;
+  position: absolute;
+}
+
+.card-desciption {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-desciption h3 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card-desciption p {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* !---------------SECTION 4 (exciting-container) FINISH ------------------*/
+
+/* ?---------------SECTION 5 (events-news-container) START ------------------*/
+
+.events-news-container {
+  margin-top: 20px;
+  padding: 20px;
+  gap: 10px;
+  background-color: var(--primary-color);
+  color: var(--fontcolor2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.events-news-container .title {
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.cards-container {
+  width: 100%;
+  display: flex;
+  position: relative;
+  height: 700px;
+  overflow: hidden;
+}
+.cards-container .card:nth-child(1) {
+  transform: rotate(56deg);
+  top: 250px;
+  left: 120px;
+}
+.cards-container .card:nth-child(2) {
+  background-color: black;
+  color: var(--fontcolor1);
+  transform: rotate(-19deg);
+  top: 50px;
+  left: 350px;
+}
+.cards-container .card:nth-child(3) {
+  transform: rotate(12deg);
+  right: 250px;
+  top: 210px;
+}
+.cards-container .card {
+  background-color: #ffffff;
+  width: 50%;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 40px;
+  justify-content: space-between;
+  padding: 20px 50px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 1);
+  border-radius: 50px;
+  transition: transform 4s;
+  margin: auto;
+  position: absolute;
+}
+
+.cards-container .card:hover {
+  z-index: 5;
+  transform: none;
+  width: 70%;
+  transition: transform 2s;
+}
+
+.cards-container .card img {
+  width: 250px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.events-description {
+  display: inline-flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 400px;
+  height: 230px;
+  text-align: left;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.events-description .title {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.events-description p {
+  font-size: 22px;
+  font-weight: 300;
+  font-style: italic;
+}
+.cards-container .card a {
+  color: var(--fontcolor1);
+  font-family: var(--button-font-);
+  font-size: 30px;
+  font-weight: 700;
+  position: relative;
+  background-color: var(--button-color);
+  padding: 10px 40px;
+  height: 50px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+/* ?---------------SECTION 5 (events-news-container) START ------------------*/
+/* !---------------SECTION 6 (get-involved-container) START ------------------*/
+
+.get-involved-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("/assets/images/william-bout.jpg") no-repeat center/cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.get-involved-container h2 {
+  font-size: 40px;
+  font-weight: 800;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  text-align: center;
+}
+
+.join-cards {
+  display: flex;
+  gap: 25px;
+  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.get-involved-container .join-cards .card {
+  width: 360px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.get-involved-container .join-cards a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.get-involved-container .join-cards a h3 {
+  position: absolute;
+  color: var(--fontcolor2);
+  font-size: 42px;
+  font-weight: bolder;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 254, 254, 0.6);
+}
+
+/* !---------------SECTION 6 (get-involved-container) FINISH------------------*/
+
+/* ------------------------------ MAIN FINISH--------------------------------- */
+
+@media (max-width: 600px) {
+  .hero {
+    height: 30vh;
+  }
+
+  .hero .desciption {
+    width: 100%;
+    right: 0;
+  }
+
+  .hero .desciption h2 {
+    font-size: 28px;
+    font-weight: 800;
+  }
+
+  .hero .desciption p {
+    font-size: 14px;
+    padding: 5px;
+    letter-spacing: 1px;
+  }
+
+  .info-section .text {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .info-section img {
+    display: none;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    height: 1550px;
+  }
+
+  .events-news-container .title {
+    line-height: 80%;
+  }
+
+  .cards-container .card:nth-child(1) {
+    transform: none;
+    top: 0;
+    margin: auto;
+    width: 98%;
+    height: 500px;
+    left: 0;
+    flex-direction: column;
+    padding: 0 0 10px 0;
+    gap: 0;
+  }
+
+  .cards-container .card:nth-child(2) {
+    transform: none;
+    top: 520px;
+    height: 500px;
+    margin: auto;
+    width: 98%;
+    left: 0;
+    flex-direction: column;
+    padding: 0 0 10px 0;
+    gap: 0;
+  }
+  .cards-container .card:nth-child(3) {
+    transform: none;
+    top: 1040px;
+    height: 500px;
+    margin: auto;
+    width: 98%;
+    left: 0;
+    flex-direction: column;
+    padding: 0 0 10px 0;
+    gap: 0;
+  }
+
+  .cards-container .card img {
+    width: 100%;
+  }
+
+  .events-description {
+    padding: 0 10px;
+    text-align: center;
+    gap: 10px;
+    align-items: center;
+    min-width: 0;
+  }
+
+  .events-description .title {
+    font-size: 26px;
+  }
+
+  .events-description p {
+    font-size: 18px;
+  }
+}
